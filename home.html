@@ -118,14 +118,13 @@
 
         const comprimento = document.getElementById('comprimento');
         let mI = DateTime.fromISO("06:00").toFormat('T');
-        let mF = DateTime.fromISO("12:00").toFormat('T');
-        console.log(mI)
+        let mF = DateTime.fromISO("13:00").toFormat('T');
         
         let tf = DateTime.fromISO("18:00").toFormat('T');
 
-        if (h >= mI && h <= mF) {
+        if (h >= mI && h < mF) {
             comprimento.innerText = "Bom dia (nome)";
-        } else if (h < mF && h <= tf) {
+        } else if (h >= mF && h < tf) {
             comprimento.innerText = "Boa tarde (nome)";
         } else {
             comprimento.innerText = "Boa noite (nome)";
