@@ -19,7 +19,7 @@
 .secondHalf {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     background-color: var(--secondary-color);
     padding: 15px;
     border-radius: 15px;
@@ -51,13 +51,13 @@
 
 .semiMenu {
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .semiMenuGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 15px;
 }
 
 .semiMenuGrid div {
@@ -69,6 +69,7 @@
     height: 23vh;
     border-radius: 15px;
     color: var(--secondary-color);
+    height: 100%;
 }
 
 .semiMenuGrid div i {
@@ -111,7 +112,7 @@
     background-color: var(--primary-color);
     border-radius: 12px;
     padding: 10px;
-    gap: 20px;
+    gap: 15px;
     text-align: center;
 }
 
