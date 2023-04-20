@@ -117,10 +117,11 @@
         date.innerText = d;
 
         const comprimento = document.getElementById('comprimento');
-        let mI = DateTime.fromISO("06:00").valueOf();
-        let mF = DateTime.fromISO("12:00").valueOf();
+        let mI = DateTime.fromISO("06:00").toFormat('T');
+        let mF = DateTime.fromISO("12:00").toFormat('T');
+        console.log(mI)
         
-        let tf = DateTime.fromISO("18:00").valueOf();
+        let tf = DateTime.fromISO("18:00").toFormat('T');
 
         if (h >= mI && h <= mF) {
             comprimento.innerText = "Bom dia (nome)";
