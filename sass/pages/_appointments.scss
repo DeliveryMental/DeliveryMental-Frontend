@@ -1,0 +1,40 @@
+.mainAPT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 650px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.operation {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: $tertiary-color;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    gap: 10px;
+}
+
+.operation p {
+    background-color: $primary-color;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.resume {
+    visibility: hidden;
+
+    width: 70vh;
+    height: 70vh;
+}

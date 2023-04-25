@@ -1,0 +1,160 @@
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.firstHalf {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secondHalf {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: $secondary-color;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 700px;
+}
+
+.hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 30vh;
+    height: 100%;
+    gap: 30px;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.ad img {
+    border-radius: 15px;
+    width: 30vh;
+    height: 30vh;
+}
+
+.semiMenu {
+    display: flex;
+    gap: 15px;
+}
+
+.semiMenuGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary-color;
+        width: 23vh;
+        height: 23vh;
+        border-radius: 15px;
+        color: $secondary-color;
+        height: 100%;
+
+        i {
+            width: 100px;
+        }
+    }
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    background-color: $tertiary-color;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 20px;
+    max-height: 460px;
+    overflow-y: auto;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.notification::-webkit-scrollbar {
+    display: none;
+}
+
+.schedule::-webkit-scrollbar {
+    display: none;
+}
+
+.notiHeader {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        padding: 0;
+    }
+}
+
+.noti {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary-color;
+    border-radius: 12px;
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.notiHour {
+    text-align: right;
+}
+
+.schedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $tertiary-color;
+    height: 23vh;
+    max-width: 100%;
+    border-radius: 15px;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    overflow-x: scroll;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.schedule_day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+    p {
+        width: 80px;
+    }
+}
+
+.consult {
+    width: 50px;
+    height: 100px;
+    background-color: $primary-color;
+}
+
+.days {
+    display: flex;
+    gap: 30px;
+}

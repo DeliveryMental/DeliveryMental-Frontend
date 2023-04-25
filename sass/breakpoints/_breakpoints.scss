@@ -1,0 +1,119 @@
+@media (max-width: $smaller-screen) {
+    .grid {
+        grid-auto-rows: 45vh;
+        gap: 80px;
+    }
+}
+
+@media (max-width: $small-screen) {
+    main {
+        margin-bottom: 60px;
+    }
+
+    .grid {
+        grid-auto-rows: 30vh;
+        gap: 80px;
+    }
+
+    .grid,
+    .gridSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        max-height: 35vh !important;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .mainAPT {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .appointments {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        max-width: 280px;
+        overflow-x: auto;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .resume {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .stretch {
+        height: 58px;
+    }
+
+}
+
+@media (min-width: $medium-screen) {
+    main {
+        margin-bottom: 80px;
+    }
+
+    .grid {
+        grid-auto-rows: 30vh;
+        gap: 70px;
+    }
+
+    .grid,
+    .gridSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: $large-screen) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        gap: 70px;
+    }
+}
+
+@media (min-width: $extra-large-screen) {
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 33vh;
+        gap: 80px;
+    }
+
+    .gridSection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 40vh;
+    }
+
+}
+
+@media (min-width: $xx-large-screen) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 30vh;
+
+    }
+
+}
+
+@media (min-width: $xxx-large-screen) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 17vh;
+
+    }
+}

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/bae5127ccf.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
@@ -41,16 +41,17 @@
             <div class="secondHalf">
                 <div class="semiMenu">
                     <div class="semiMenuGrid">
-                        <div>
+                        <div id="sub_1">
                             <a href="proList.html"><i class="fa-solid fa-brain"></i></a>
                         </div>
-                        <div>
+                        <div id="sub_2">
                             <i class="fa-solid fa-credit-card"></i>
                         </div>
-                        <div><a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a></div>
-                        <div><i class="fa-solid fa-gear"></i></div>
+                        <div id="sub_3"><a href="profile.html"><img class="picture-user" src="img/download.jpg"
+                                    alt=""></a></div>
+                        <div id="sub_4"><i class="fa-solid fa-gear"></i></div>
                     </div>
-                    <div class="notification">
+                    <div class="notification" id="notification">
 
                         <div class="noti">
                             <div class="notiHeader">
@@ -90,13 +91,39 @@
 
                 <div class="schedule">
 
-                    <p>aer</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+            
+
+                    <div class="days">
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>domingo</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>segunda</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>terça</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>quarta</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>quinta</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>sexta</p>
+                        </div>
+                        <div class="schedule_day">
+                            <span class="consult">srj</span>
+                            <p>sábado</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -106,7 +133,12 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://moment.github.io/luxon/global/luxon.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js"></script>
     <script>
+
+
+
         const DateTime = luxon.DateTime;
         let h = DateTime.now().toFormat('T');
         let d = DateTime.now().toFormat("ccc ', ' dd 'de' LLL", { locale: "pt" });
@@ -119,7 +151,7 @@
         const comprimento = document.getElementById('comprimento');
         let mI = DateTime.fromISO("06:00").toFormat('T');
         let mF = DateTime.fromISO("13:00").toFormat('T');
-        
+
         let tf = DateTime.fromISO("18:00").toFormat('T');
 
         if (h >= mI && h < mF) {
