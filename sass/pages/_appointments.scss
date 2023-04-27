@@ -15,7 +15,6 @@
 }
 
 .operation {
-    
     display: flex;
     flex-direction: column;
     background-color: $tertiary-color;
@@ -24,17 +23,76 @@
     cursor: pointer;
     text-align: center;
     gap: 10px;
-}
 
-.operation p {
-    background-color: $primary-color;
-    border-radius: 4px;
-    padding: 5px;
+    p {
+        background-color: $primary-color;
+        border-radius: 4px;
+        padding: 5px;
+    }
 }
 
 .resume {
     visibility: hidden;
-
     width: 70vh;
     height: 70vh;
+}
+
+.appear {
+    visibility: visible;
+}
+
+@media (max-width: $small-screen) {
+    .mainAPT {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .appointments {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        max-width: 280px;
+        overflow-x: auto;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .resume {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .stretch {
+        height: 58px;
+    }
+}
+
+@media (max-width: 320px) {
+    .mainAPT {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .appointments {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        max-width: 280px;
+        overflow-x: auto;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .resume {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .stretch {
+        height: 58px;
+    }
 }

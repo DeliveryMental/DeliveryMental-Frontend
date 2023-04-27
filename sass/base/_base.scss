@@ -9,7 +9,6 @@ p {
 body {
     color: $tertiary-color;
     background-color: $primary-color;
-    font-family: 'DM Sans', sans-serif;
 }
 
 hr {
@@ -48,12 +47,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
-
-
-
-.appear {
-    visibility: visible;
 }
 
 .card {

@@ -9,7 +9,6 @@ p {
 body {
   color: #16A085;
   background-color: #2C3E50;
-  font-family: "DM Sans", sans-serif;
 }
 
 hr {
@@ -48,10 +47,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
-
-.appear {
-  visibility: visible;
 }
 
 .card {
@@ -165,13 +160,13 @@ main {
 }
 
 html {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 @media (max-width: 280px) {
   .grid {
-    grid-auto-rows: 45vh;
-    gap: 80px;
+    grid-auto-rows: 60vh;
+    gap: 80px !important;
   }
 }
 @media (max-width: 578px) {
@@ -179,8 +174,8 @@ html {
     margin-bottom: 60px;
   }
   .grid {
-    grid-auto-rows: 30vh;
-    gap: 80px;
+    grid-auto-rows: 33vh;
+    gap: 70px !important;
   }
   .grid,
   .gridSection {
@@ -196,36 +191,14 @@ html {
   hr {
     display: block;
   }
-  .mainAPT {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-  }
-  .appointments {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    max-width: 280px;
-    overflow-x: auto;
-    padding-right: 0;
-    padding-bottom: 15px;
-  }
-  .resume {
-    width: 40vh;
-    height: 40vh;
-  }
-  .stretch {
-    height: 58px;
-  }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   main {
     margin-bottom: 80px;
   }
   .grid {
-    grid-auto-rows: 30vh;
-    gap: 70px;
+    grid-auto-rows: 33vh;
+    gap: 60px !important;
   }
   .grid,
   .gridSection {
@@ -235,8 +208,11 @@ html {
 @media (min-width: 992px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 30vh;
-    gap: 70px;
+    grid-auto-rows: 32vh;
+    gap: 60px !important;
+  }
+  .secondHalf {
+    max-width: 60% !important;
   }
 }
 @media (min-width: 1200px) {
@@ -249,6 +225,9 @@ html {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 40vh;
   }
+  .secondHalf {
+    max-width: 80% !important;
+  }
 }
 @media (min-width: 1440px) {
   .grid {
@@ -259,7 +238,8 @@ html {
 @media (min-width: 2560px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 17vh;
+    grid-auto-rows: 19vh;
+    gap: 60px !important;
   }
 }
 header {
@@ -616,7 +596,6 @@ input::-webkit-file-upload-button {
   text-align: center;
   gap: 10px;
 }
-
 .operation p {
   background-color: #2C3E50;
   border-radius: 4px;
@@ -629,6 +608,58 @@ input::-webkit-file-upload-button {
   height: 70vh;
 }
 
+.appear {
+  visibility: visible;
+}
+
+@media (max-width: 578px) {
+  .mainAPT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  .appointments {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 280px;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+  .resume {
+    width: 40vh;
+    height: 40vh;
+  }
+  .stretch {
+    height: 58px;
+  }
+}
+@media (max-width: 320px) {
+  .mainAPT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  .appointments {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 280px;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+  .resume {
+    width: 30vh;
+    height: 30vh;
+  }
+  .stretch {
+    height: 58px;
+  }
+}
 .grid {
   margin-top: 30px;
   width: 100%;
