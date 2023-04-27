@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    margin-bottom: 90px;
 }
 
 .appointments {
@@ -41,12 +42,11 @@
     visibility: visible;
 }
 
-@media (max-width: $small-screen) {
+@media (max-width: $medium-screen) {
     .mainAPT {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
         flex-direction: column-reverse;
+        gap: 30px;
     }
 
     .appointments {
@@ -60,7 +60,7 @@
     }
 
     .resume {
-        width: 40vh;
+        width: 100%;
         height: 40vh;
     }
 
@@ -75,6 +75,7 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column-reverse;
+        margin-bottom: 0;
     }
 
     .appointments {
@@ -88,7 +89,7 @@
     }
 
     .resume {
-        width: 30vh;
+        width: 100%;
         height: 30vh;
     }
 

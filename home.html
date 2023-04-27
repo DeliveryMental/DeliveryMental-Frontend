@@ -20,8 +20,8 @@
 
     <main class="container my-5">
 
-        <div class="menu">
-            <div class="firstHalf">
+        <div class="menu" id="menu">
+            <div class="firstHalf tile" id="firstHalf">
                 <div class="hour">
 
                     <h1 id="comprimento"></h1>
@@ -41,24 +41,31 @@
             <div class="secondHalf">
                 <div class="semiMenu">
                     <div class="semiMenuGrid">
-                        <div id="sub_1">
+                        <div class="tile" id="sub_1">
                             <a href="proList.html"><i class="fa-solid fa-brain"></i></a>
+                            <p>Psicos</p>
                         </div>
-                        <div id="sub_2">
-                            <i class="fa-solid fa-credit-card"></i>
+                        <div class="tile" id="sub_2">
+                            <a href="appointments.html"><i class="fa-solid fa-file-signature"></i></a>
+                            <p>Agenda</p>
                         </div>
-                        <div id="sub_3"><a href="profile.html"><img class="picture-user" src="img/download.jpg"
-                                    alt=""></a></div>
-                        <div id="sub_4"><i class="fa-solid fa-gear"></i></div>
+                        <div class="tile" id="sub_3">
+                            <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                            <p>Perfil</p>
+                        </div>
+                        <div class="tile" id="sub_4">
+                            <a href=""><i class="fa-solid fa-gear"></i></a>
+                            <p>Configurações</p>
+                        </div>
                     </div>
-                    <div class="notification" id="notification">
+                    <div class="notification tile" id="notification">
 
                         <div class="noti">
                             <div class="notiHeader">
                                 <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
                                 <i class="fa-solid fa-x"></i>
                             </div>
-                            <p>aham, fudeu de vez</p>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
                             <p class="notiHour">19:30</p>
                         </div>
                         <div class="noti">
@@ -66,7 +73,7 @@
                                 <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
                                 <i class="fa-solid fa-x"></i>
                             </div>
-                            <p>aham, fudeu de vez</p>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
                             <p class="notiHour">19:30</p>
                         </div>
                         <div class="noti">
@@ -74,7 +81,7 @@
                                 <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
                                 <i class="fa-solid fa-x"></i>
                             </div>
-                            <p>aham, fudeu de vez</p>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
                             <p class="notiHour">19:30</p>
                         </div>
                         <div class="noti">
@@ -82,44 +89,108 @@
                                 <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
                                 <i class="fa-solid fa-x"></i>
                             </div>
-                            <p>aham, fudeu de vez</p>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
                             <p class="notiHour">19:30</p>
                         </div>
 
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
+                        <div class="noti">
+                            <div class="notiHeader">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                            <p><strong>Mensagem do seu psico:</strong> <br> aham, fudeu de vez</p>
+                            <p class="notiHour">19:30</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="schedule">
-
-            
-
+                <div class="schedule tile" id="schedule">
                     <div class="days">
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <span>19H48</span>
+                            </span>
                             <p>domingo</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <span>19H48</span>
+                            </span>
                             <p>segunda</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <p>Sem</p>
+                            </span>
                             <p>terça</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <span>19H48</span>
+                            </span>
                             <p>quarta</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <p>Sem</p>
+                            </span>
                             <p>quinta</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <span>19H48</span>
+                            </span>
                             <p>sexta</p>
                         </div>
                         <div class="schedule_day">
-                            <span class="consult">srj</span>
+                            <span class="consult">
+                                <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+                                <span>19H48</span>
+                            </span>
                             <p>sábado</p>
                         </div>
                     </div>
