@@ -1,18 +1,122 @@
-.bg-body {
-    background-image: url(../img/blob-scene-haikei.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(.2vh);
+// .bg-body {
+//     background-image: url(../img/blob-scene-haikei.svg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     backdrop-filter: blur(.2vh);
+// }
+
+.mainHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
+    img {
+        border-radius: 12px;
+        width: 30%;
+        height: 30%;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.headerPic {
-    background-image: url(../img/bannerPsi.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 1000px;
+#about {
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 15px;
+    gap: 50px;
+    background-color: $primary-color;
+
+    h1 {
+        background-color: $tertiary-color;
+        color: $primary-color;
+        padding: 5px;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-color;
+        border-radius: 10px;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        border-radius: 12px;
+    }
+}
+
+#register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 50px;
+    background-color: $tertiary-color;
+    color: $tertiary-color;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: $primary-color;
+    }
+
+    .container {
+        width: 30%;
+        background-color: inherit;
+        padding: 0;
+    }
+
+    h1 {
+        background-color: $primary-color;
+        padding: 5px;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    .align-top {
+        align-self: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+
+    .align-bottom {
+        align-self: flex-end;
+        width: 50%;
+        height: 100%;
+    }
 }
 
 .footerInfo {
@@ -20,6 +124,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: $secondary-color;
+    border-radius: 10px;
+    padding: 10px;
+
 }
 
 .imgFooter {
@@ -28,61 +137,41 @@
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
-    border-radius: 7px;
+    border-radius: 12px;
 }
 
-.gridSection {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    gap: 10px;
+@media (max-width: $smaller-screen) {
+    #about {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .imgFooter {
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
-.sobre {
-    display: flex;
-    flex-direction: column;
-    background-color: $primary-color;
-    padding: 7px;
-    align-items: center;
-    gap: 20px;
-    border-radius: 5px;
-    border-bottom: 2px $tertiary-color solid;
+@media (max-width: $small-screen) {
+    #about {
+        div {
+            flex-direction: column;
+        }
+    }
+
+    .container {
+        width: 100%;
+    }
 }
 
-.normalText {
-    background-color: $primary-color;
-    padding: 7px;
-    border-radius: 5px;
-    border-bottom: 2px $tertiary-color solid;
-}
-
-.sobre p,
-.register p,
-.normalText p {
-    text-align: center;
-}
-
-.sobre img,
-.register img {
-    border-radius: 7px;
-}
-
-.registerWrapp img {
-    border-radius: 5px 5px 0 0;
-}
-
-.register {
-    background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    border-radius: 0 0 5px 5px;
-    border-bottom: 2px $tertiary-color solid;
-
-    a {
-        color: $primary-color;
-        background-color: $tertiary-color;
+@media (max-width: $medium-screen) {
+    .mainHeader {
+        img {
+            width: 50%;
+            height: 50%;
+        }
     }
 }
