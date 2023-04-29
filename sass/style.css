@@ -7,6 +7,7 @@ p {
 }
 
 body {
+  cursor: url("../../img/cursor.cur"), none;
   color: #16A085;
   background-color: #2C3E50;
 }
@@ -491,15 +492,15 @@ nav a {
   display: none;
 }
 .semiMenuGrid div i {
-  font-size: 5vw;
+  font-size: 5vh;
 }
 .semiMenuGrid div a {
   border-radius: 10px;
 }
 .semiMenuGrid div .picture-user {
-  width: 5vw;
-  height: 5vw;
-  border-radius: 12px;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 1vh;
 }
 
 .notification {
@@ -534,6 +535,9 @@ nav a {
 }
 .notiHeader a {
   padding: 0;
+}
+.notiHeader i {
+  cursor: pointer;
 }
 
 .noti {
@@ -630,18 +634,21 @@ nav a {
   .semiMenuGrid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .semiMenuGrid div {
     height: 10vh;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
   .semiMenuGrid div p {
-    width: 10vw;
     font-weight: bold;
     display: block;
+  }
+  .semiMenuGrid :nth-child(3) :nth-child(1) {
+    padding: 0;
   }
   .ad {
     display: none;
@@ -734,6 +741,7 @@ nav a {
   visibility: hidden;
   width: 70vh;
   height: 70vh;
+  max-height: 650px;
 }
 .resume .card {
   background-color: #34495E;
@@ -794,7 +802,6 @@ nav a {
 }
 .grid {
   margin-top: 30px;
-  margin-bottom: 100px;
   width: 100%;
   height: 100%;
   display: grid;
@@ -804,6 +811,20 @@ nav a {
   background-color: #34495E;
   color: #16A085;
 }
+
+.proPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.proPagination i {
+  cursor: pointer;
+}
+
 .content {
   display: flex;
   flex-direction: column;

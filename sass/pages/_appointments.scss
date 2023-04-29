@@ -24,7 +24,7 @@
     cursor: pointer;
     text-align: center;
     gap: 10px;
-
+    
     p {
         background-color: $primary-color;
         border-radius: 4px;
@@ -36,6 +36,7 @@
     visibility: hidden;
     width: 70vh;
     height: 70vh;
+    max-height: 650px;
 
     .card {
         background-color: $secondary-color;

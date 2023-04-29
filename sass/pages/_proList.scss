@@ -1,6 +1,5 @@
 .grid {
     margin-top: 30px;
-    margin-bottom: 100px;
     width: 100%;
     height: 100%;
     display: grid;
@@ -9,10 +8,20 @@
     .card {
         background-color: $secondary-color;
         color: $tertiary-color;
+    }
+}
 
-        a {
-         
-        }
+.proPagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+    i {
+        cursor: pointer;
     }
 }
 

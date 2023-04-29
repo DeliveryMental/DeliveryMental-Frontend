@@ -50,9 +50,10 @@ function removeNoti(element) {
     let notis = document.getElementById('notification')
     let notiQuan = notis.children.length
     const h2 = document.createElement('h2')
-    h2.textContent = 'Sem notificações novas para você'
+    h2.textContent = 'Você já viu todas as notificações'
 
     if (notiQuan == 0) {
         notis.appendChild(h2)
+        notis.style.justifyContent = 'center'
     }
 }
