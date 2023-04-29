@@ -18,7 +18,7 @@
 .operation {
     display: flex;
     flex-direction: column;
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
@@ -36,6 +36,11 @@
     visibility: hidden;
     width: 70vh;
     height: 70vh;
+
+    .card {
+        background-color: $secondary-color;
+        color: $tertiary-color;
+    }
 }
 
 .appear {

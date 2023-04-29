@@ -24,17 +24,22 @@ h2 {
     margin: 0;
 }
 
+.anchorBorderNone {
+    border: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
     transition: .5s;
-    border-radius: 4px;
+    border-radius: 7px;
     padding: 7px;
+    border: 1px solid $tertiary-color;
 }
 
 a:hover {
-    background-color: $primary-color;
-    color: $tertiary-color;
+    background-color: $tertiary-color;
+    color: $primary-color;
 }
 
 i {
@@ -65,6 +70,7 @@ i {
 .search {
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;

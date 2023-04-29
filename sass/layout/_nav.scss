@@ -8,6 +8,10 @@ nav {
     border: 1.5px solid $primary-color !important;
 
     padding: 5px;
+
+    a {
+        border: none;
+    }
 }
 
 .navWrapp {

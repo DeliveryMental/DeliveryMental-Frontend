@@ -24,17 +24,22 @@ h2 {
   margin: 0;
 }
 
+.anchorBorderNone {
+  border: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
   transition: 0.5s;
-  border-radius: 4px;
+  border-radius: 7px;
   padding: 7px;
+  border: 1px solid #16A085;
 }
 
 a:hover {
-  background-color: #2C3E50;
-  color: #16A085;
+  background-color: #16A085;
+  color: #2C3E50;
 }
 
 i {
@@ -65,6 +70,7 @@ i {
 .search {
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -149,10 +155,12 @@ i {
   border: none;
   background: transparent;
   outline: none;
+  padding: 0;
 }
 
-html {
+body {
   font-family: "DM Sans", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 @media (max-width: 578px) {
@@ -181,6 +189,32 @@ html {
     grid-auto-rows: 40vh;
   }
 }
+button {
+  background-color: #2C3E50;
+  color: #16A085;
+  border: 1px solid #16A085;
+  border-radius: 7px;
+  padding: 7px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #16A085;
+  color: #2C3E50;
+}
+
+input,
+input::-webkit-file-upload-button {
+  background-color: #2C3E50 !important;
+  border-color: #2C3E50 !important;
+  color: #16A085 !important;
+  box-shadow: none !important;
+}
+
+input::-webkit-file-upload-button {
+  border-color: #34495E !important;
+}
+
 header {
   background-color: #34495E;
   padding: 5px;
@@ -188,11 +222,23 @@ header {
 }
 
 footer {
-  background-color: #2C3E50;
-  padding: 10px;
+  background-color: #34495E;
+  padding: 20px;
 }
 footer p {
   margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #34495E;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 20px;
+  width: 40vh;
+  text-align: center;
 }
 
 nav {
@@ -203,6 +249,9 @@ nav {
   border-radius: 6px;
   border: 1.5px solid #2C3E50 !important;
   padding: 5px;
+}
+nav a {
+  border: none;
 }
 
 .navWrapp {
@@ -222,19 +271,23 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
 }
 .mainHeader img {
   border-radius: 12px;
-  width: 30%;
-  height: 30%;
+  width: 200px;
+  height: 200px;
 }
 .mainHeader a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 9px;
+}
+.mainHeader h1, .mainHeader h2 {
+  margin: 0;
 }
 
 #about {
@@ -243,7 +296,6 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  gap: 50px;
   background-color: #2C3E50;
 }
 #about h1 {
@@ -283,7 +335,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  gap: 50px;
+  gap: 20px;
   background-color: #16A085;
   color: #16A085;
 }
@@ -324,7 +376,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #34495E;
+  background-color: #2C3E50;
   border-radius: 10px;
   padding: 10px;
 }
@@ -357,9 +409,15 @@ nav {
   }
 }
 @media (max-width: 768px) {
-  .mainHeader img {
-    width: 50%;
-    height: 50%;
+  #register .align-top {
+    align-self: center;
+    width: 100px;
+    height: 200px;
+  }
+  #register .align-bottom {
+    align-self: center;
+    width: 100px;
+    height: 200px;
   }
 }
 .menu {
@@ -441,22 +499,29 @@ nav {
 .semiMenuGrid div .picture-user {
   width: 5vw;
   height: 5vw;
+  border-radius: 12px;
 }
 
 .notification {
   display: flex;
   flex-direction: column;
   background-color: #16A085;
+  color: #2C3E50;
   width: 100%;
   height: 100%;
   border-radius: 15px;
   padding: 10px;
   gap: 20px;
+  height: 460px;
   max-height: 460px;
   overflow-y: auto;
   overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.notiOut {
+  text-align: center;
 }
 
 .notification::-webkit-scrollbar {
@@ -476,6 +541,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   background-color: #2C3E50;
+  color: #16A085;
   border-radius: 12px;
   padding: 10px;
   gap: 15px;
@@ -509,6 +575,9 @@ nav {
 }
 .schedule_day p {
   width: 80px;
+}
+.schedule_day a {
+  border: none;
 }
 
 .schedule::-webkit-scrollbar {
@@ -601,7 +670,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  margin-top: 12vh;
+}
+.profileWrapp form {
+  gap: 20px;
 }
 
 .profile {
@@ -617,39 +689,12 @@ nav {
   gap: 30px;
 }
 
-#btn-profile {
-  background-color: #16A085;
-  border-radius: 7px;
-  border: none;
-  padding: 7px;
-  transition: 0.5s;
-  color: #2C3E50;
-}
-
-#btn-profile:hover {
-  background-color: #2C3E50;
-  color: #16A085;
-  border: 1px solid #16A085;
-}
-
 .picture {
   width: 100px;
   height: 100px;
   border-radius: 6px;
   object-fit: cover;
   box-shadow: -1rem 0 3rem #000000;
-}
-
-input,
-input::-webkit-file-upload-button {
-  background-color: #2C3E50 !important;
-  border-color: #2C3E50 !important;
-  color: #16A085 !important;
-  box-shadow: none !important;
-}
-
-input::-webkit-file-upload-button {
-  border-color: #34495E !important;
 }
 
 .mainAPT {
@@ -672,7 +717,7 @@ input::-webkit-file-upload-button {
 .operation {
   display: flex;
   flex-direction: column;
-  background-color: #16A085;
+  background-color: #34495E;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -689,6 +734,10 @@ input::-webkit-file-upload-button {
   visibility: hidden;
   width: 70vh;
   height: 70vh;
+}
+.resume .card {
+  background-color: #34495E;
+  color: #16A085;
 }
 
 .appear {
@@ -751,7 +800,10 @@ input::-webkit-file-upload-button {
   display: grid;
   gap: 30px;
 }
-
+.grid .card {
+  background-color: #34495E;
+  color: #16A085;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -766,22 +818,6 @@ input::-webkit-file-upload-button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-}
-
-.btn-psico {
-  background-color: #2C3E50;
-  border-radius: 7px;
-  border: 1px solid;
-  border-color: #16A085;
-  padding: 7px;
-  transition: 0.5s;
-  color: #16A085;
-}
-
-.btn-psico:hover {
-  background-color: #16A085;
-  color: #2C3E50;
-  border: 1px solid #2C3E50;
 }
 
 @media (max-width: 578px) {
@@ -813,6 +849,32 @@ input::-webkit-file-upload-button {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.formWrapper h1 {
+  background-color: #2C3E50;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+#registerAnchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

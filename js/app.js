@@ -41,3 +41,18 @@ operations.forEach(operation => {
         resume.classList.add('appear');
     });
 });
+
+// notifications 
+
+function removeNoti(element) {
+    var notiElement = element.parentNode.parentNode; // acessa o elemento pai com a classe "noti"
+    notiElement.remove(); // remove o elemento
+    let notis = document.getElementById('notification')
+    let notiQuan = notis.children.length
+    const h2 = document.createElement('h2')
+    h2.textContent = 'Sem notificações novas para você'
+
+    if (notiQuan == 0) {
+        notis.appendChild(h2)
+    }
+}

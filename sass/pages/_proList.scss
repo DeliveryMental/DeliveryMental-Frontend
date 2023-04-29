@@ -5,6 +5,15 @@
     height: 100%;
     display: grid;
     gap: 30px;
+
+    .card {
+        background-color: $secondary-color;
+        color: $tertiary-color;
+
+        a {
+         
+        }
+    }
 }
 
 .content {
@@ -21,22 +30,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-.btn-psico {
-    background-color: $primary-color;
-    border-radius: 7px;
-    border: 1px solid;
-    border-color: $tertiary-color;
-    padding: 7px;
-    transition: .5s;
-    color: $tertiary-color;
-}
-
-.btn-psico:hover {
-    background-color: $tertiary-color;
-    color: $primary-color;
-    border: 1px solid $primary-color;
 }
 
 @media (max-width: $smaller-screen) {

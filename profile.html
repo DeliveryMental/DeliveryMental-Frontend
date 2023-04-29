@@ -19,41 +19,42 @@
 <body>
     <main class="container">
         <div class="profileWrapp">
-            <form class="profile" id="profile" action="" method="post">
-                <img class="picture" id="imgUsuario" src="img/download.jpg" alt="">
-    
-                <div class="rate">
-                    <i class="fa-solid fa-star"></i><span>4.5/5</span>
+            <form id="profile" action="" method="post">
+                <div>
+                    <img class="picture" id="imgUsuario" src="img/dog.png" alt="">
                 </div>
-    
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.5/5</span>
+                </div>
+
                 <div>
                     <p>Quantidade de avaliações: 01</p>
                 </div>
-    
-                <div class="inputWrapper">
-    
-                    <div class="mb-3">
-                        <input onchange="mostraImagem(this)" type="file" class="form-control" id="formFile"
-                            aria-describedby="emailHelp">
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Seu nome</label>
-                        <input type="text" class="form-control">
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="surname" class="form-label">Seu sobrenome</label>
-                        <input type="text" class="form-control">
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Seu email</label>
-                        <input type="email" class="form-control">
-                    </div>
+
+                <div class="">
+                    <input onchange="mostraImagem(this)" type="file" class="form-control" id="formFile"
+                        aria-describedby="emailHelp">
                 </div>
+
+                <div class="">
+                    <label for="name" class="form-label">Seu nome</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="">
+                    <label for="surname" class="form-label">Seu sobrenome</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="">
+                    <label for="email" class="form-label">Seu email</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <button id="btn-profile" form="profile" type="submit">Salvar</button>
             </form>
-            <button id="btn-profile" form="profile" type="submit">Salvar</button>
         </div>
     </main>
 
@@ -65,7 +66,7 @@
 
             <a href="home.html"><i class="fa-solid fa-house"></i></a>
 
-            <a href="profile.html"><img class="picture-user" src="img/download.jpg" alt=""></a>
+            <a href="profile.html"><img class="picture-user" src="img/dog.png" alt=""></a>
         </nav>
     </div>
 

@@ -6,17 +6,18 @@
 
 @import 'breakpoints/breakpoints';
 
+@import 'components/buttons';
+@import 'components/inputs';
+@import 'components/selects';
+
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/forms';
 @import 'layout/nav';
-
-@import 'components/buttons';
-@import 'components/inputs';
-@import 'components/selects';
 
 @import 'pages/index';
 @import 'pages/home';
 @import 'pages/profile';
 @import 'pages/appointments';
 @import 'pages/proList';
+@import 'pages/register';
