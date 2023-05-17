@@ -1,5 +1,5 @@
 ::selection {
-    background-color: $secondary-color;
+    background-color: black;
 }
 
 p {
@@ -15,7 +15,6 @@ hr {
     border: 2px solid #16A085;
     border-radius: 2px;
     width: 100%;
-    display: none;
 }
 
 h2 {
@@ -106,7 +105,7 @@ i {
     cursor: pointer;
 }
 
-.fa-magnifying-glass {
+.fa-magnifying-glass, .fa-paper-plane {
     background-color: $primary-color;
     color: $tertiary-color;
     padding: 10px;
@@ -115,7 +114,7 @@ i {
     cursor: pointer;
 }
 
-.fa-magnifying-glass:hover {
+.fa-magnifying-glass:hover, .fa-paper-plane:hover {
     background-color: $tertiary-color;
     color: $primary-color;
 }

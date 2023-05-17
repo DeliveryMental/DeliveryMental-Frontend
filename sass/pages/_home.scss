@@ -136,6 +136,14 @@
     padding: 10px;
     gap: 15px;
     text-align: center;
+
+    a {
+        border: none;
+
+        .picture-user {
+            border-radius: 7px;
+        }
+    }
 }
 
 .notiHour {

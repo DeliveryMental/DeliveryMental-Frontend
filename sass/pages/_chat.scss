@@ -1,0 +1,82 @@
+.chatHeading {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: $secondary-color;
+
+    border-radius: 12px 12px 0 0;
+
+    padding: 10px;
+}
+
+#chatHeadingMeio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(../../img/blob-scene-haikei.svg);
+    background-position: center center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    padding: 10px;
+    gap: 20px;
+    border-radius: 0 0 12px 12px;
+
+    max-height: 450px;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    padding: 5px;
+    border-radius: 10px;
+    scroll-snap-align: end;
+}
+
+.messageDate{
+    align-self: flex-end;
+    font-size: 11px;
+}
+
+.yourMessage {
+    display: flex;
+    align-self: flex-end;
+    justify-content: end;
+}
+
+.theirMessage{
+    display: flex;
+    align-self: flex-start;
+}
+
+.submitMessage {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    width: 30vh;
+
+    background-color: $secondary-color;
+
+    padding: 5px;
+
+    top: 643px;
+    
+    input {
+        border: 2px solid $tertiary-color !important;
+    }
+}

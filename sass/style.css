@@ -1,5 +1,5 @@
 ::selection {
-  background-color: #34495E;
+  background-color: black;
 }
 
 p {
@@ -15,7 +15,6 @@ hr {
   border: 2px solid #16A085;
   border-radius: 2px;
   width: 100%;
-  display: none;
 }
 
 h2 {
@@ -106,7 +105,7 @@ i {
   cursor: pointer;
 }
 
-.fa-magnifying-glass {
+.fa-magnifying-glass, .fa-paper-plane {
   background-color: #2C3E50;
   color: #16A085;
   padding: 10px;
@@ -115,7 +114,7 @@ i {
   cursor: pointer;
 }
 
-.fa-magnifying-glass:hover {
+.fa-magnifying-glass:hover, .fa-paper-plane:hover {
   background-color: #16A085;
   color: #2C3E50;
 }
@@ -173,9 +172,6 @@ body {
   footer {
     flex-direction: column;
     align-items: center;
-  }
-  hr {
-    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -266,160 +262,230 @@ nav a {
   padding: 5px;
 }
 
-.mainHeader {
+.mainAPT {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-.mainHeader img {
-  border-radius: 12px;
-  width: 200px;
-  height: 200px;
-}
-.mainHeader a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9px;
-}
-.mainHeader h1, .mainHeader h2 {
-  margin: 0;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 90px;
+  gap: 30px;
 }
 
-#about {
+.appointments {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  background-color: #2C3E50;
+  gap: 30px;
+  max-height: 650px;
+  overflow-y: auto;
+  padding-right: 15px;
 }
-#about h1 {
-  background-color: #16A085;
-  color: #2C3E50;
-  padding: 5px;
-  border-radius: 8px;
-  margin: 0;
-}
-#about div {
+
+.operation {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-}
-#about p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background-color: #34495E;
-  border-radius: 10px;
-  padding: 10px;
-  height: 300px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  gap: 10px;
 }
-#about .container {
-  flex-direction: column;
-}
-#about img {
-  width: 300px;
-  height: 300px;
-  border-radius: 12px;
+.operation p {
+  background-color: #2C3E50;
+  border-radius: 4px;
+  padding: 5px;
 }
 
-#register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  gap: 20px;
-  background-color: #16A085;
+.resume {
+  visibility: hidden;
+  width: 70vh;
+  height: 70vh;
+  max-height: 650px;
+}
+.resume .card {
+  background-color: #34495E;
   color: #16A085;
 }
-#register div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #2C3E50;
-}
-#register .container {
-  width: 30%;
-  background-color: inherit;
-  padding: 0;
-}
-#register h1 {
-  background-color: #2C3E50;
-  padding: 5px;
-  border-radius: 8px;
-  margin: 0;
-}
-#register .align-top {
-  align-self: flex-start;
-  width: 50%;
-  height: 100%;
-}
-#register .align-bottom {
-  align-self: flex-end;
-  width: 50%;
-  height: 100%;
+
+.appear {
+  visibility: visible;
 }
 
-.footerInfo {
+@media (max-width: 768px) {
+  .mainAPT {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .appointments {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 280px;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+  .resume {
+    width: 100%;
+    height: 40vh;
+  }
+  .stretch {
+    height: 58px;
+  }
+}
+@media (max-width: 320px) {
+  .mainAPT {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+  .appointments {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 280px;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+  .resume {
+    width: 100%;
+    height: 30vh;
+  }
+  .stretch {
+    height: 58px;
+  }
+}
+.chatHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #34495E;
+  border-radius: 12px 12px 0 0;
+  padding: 10px;
+}
+
+#chatHeadingMeio {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../img/blob-scene-haikei.svg);
+  background-position: center center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 0 0 12px 12px;
+  max-height: 450px;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
   background-color: #2C3E50;
+  padding: 5px;
   border-radius: 10px;
+  scroll-snap-align: end;
+}
+
+.messageDate {
+  align-self: flex-end;
+  font-size: 11px;
+}
+
+.yourMessage {
+  display: flex;
+  align-self: flex-end;
+  justify-content: end;
+}
+
+.theirMessage {
+  display: flex;
+  align-self: flex-start;
+}
+
+.submitMessage {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  width: 30vh;
+  background-color: #34495E;
+  padding: 5px;
+  top: 643px;
+}
+.submitMessage input {
+  border: 2px solid #16A085 !important;
+}
+
+.aux {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.aux img {
+  width: 6vh;
+  height: 6vh;
+}
+.aux a {
+  width: min-content;
+}
+.aux span {
+  background-color: #34495E;
+  color: #16A085;
+  border-radius: 40px;
+  border: 1px #34495E solid;
+  padding: 5px;
+  transition: 0.5s;
+}
+.aux span:hover {
+  background-color: #16A085;
+  color: #2C3E50;
+}
+
+.headingConfig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 
-.imgFooter {
-  background-image: url(../img/dog.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
-  border-radius: 12px;
+.config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-@media (max-width: 280px) {
-  #about img {
-    width: 200px;
-    height: 200px;
-  }
-  .imgFooter {
-    width: 200px;
-    height: 200px;
-  }
+.subConfig {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  background-color: #16A085;
+  color: #2C3E50;
+  border-radius: 15px;
+  font-size: large;
 }
-@media (max-width: 578px) {
-  #about div {
-    flex-direction: column;
-  }
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  #register .align-top {
-    align-self: center;
-    width: 100px;
-    height: 200px;
-  }
-  #register .align-bottom {
-    align-self: center;
-    width: 100px;
-    height: 200px;
-  }
-}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -550,6 +616,12 @@ nav a {
   gap: 15px;
   text-align: center;
 }
+.noti a {
+  border: none;
+}
+.noti a .picture-user {
+  border-radius: 7px;
+}
 
 .notiHour {
   text-align: right;
@@ -671,6 +743,169 @@ nav a {
     width: 15vh;
   }
 }
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.mainHeader img {
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+}
+.mainHeader a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+}
+.mainHeader h1, .mainHeader h2 {
+  margin: 0;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #2C3E50;
+}
+#about h1 {
+  background-color: #16A085;
+  color: #2C3E50;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0;
+}
+#about div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+#about p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34495E;
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+}
+#about .container {
+  flex-direction: column;
+}
+#about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+  background-color: #16A085;
+  color: #16A085;
+}
+#register div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #2C3E50;
+}
+#register .container {
+  width: 30%;
+  background-color: inherit;
+  padding: 0;
+}
+#register h1 {
+  background-color: #2C3E50;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.align-top {
+  align-self: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.align-bottom {
+  align-self: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C3E50;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.indexHr {
+  display: none;
+}
+
+.imgFooter {
+  background-image: url(../img/dog.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+@media (max-width: 280px) {
+  #about img {
+    width: 200px;
+    height: 200px;
+  }
+  .imgFooter {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 578px) {
+  #about div {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+  .indexHr {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  #register .align-top {
+    align-self: center;
+    width: 100px;
+    height: 200px;
+  }
+  #register .align-bottom {
+    align-self: center;
+    width: 100px;
+    height: 200px;
+  }
+}
 .profileWrapp {
   display: flex;
   flex-direction: column;
@@ -703,102 +938,6 @@ nav a {
   box-shadow: -1rem 0 3rem #000000;
 }
 
-.mainAPT {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-bottom: 90px;
-}
-
-.appointments {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-height: 650px;
-  overflow-y: auto;
-  padding-right: 15px;
-}
-
-.operation {
-  display: flex;
-  flex-direction: column;
-  background-color: #34495E;
-  border-radius: 5px;
-  padding: 5px;
-  cursor: pointer;
-  text-align: center;
-  gap: 10px;
-}
-.operation p {
-  background-color: #2C3E50;
-  border-radius: 4px;
-  padding: 5px;
-}
-
-.resume {
-  visibility: hidden;
-  width: 70vh;
-  height: 70vh;
-  max-height: 650px;
-}
-.resume .card {
-  background-color: #34495E;
-  color: #16A085;
-}
-
-.appear {
-  visibility: visible;
-}
-
-@media (max-width: 768px) {
-  .mainAPT {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-  }
-  .appointments {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    max-width: 280px;
-    overflow-x: auto;
-    padding-right: 0;
-    padding-bottom: 15px;
-  }
-  .resume {
-    width: 100%;
-    height: 40vh;
-  }
-  .stretch {
-    height: 58px;
-  }
-}
-@media (max-width: 320px) {
-  .mainAPT {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-    margin-bottom: 0;
-  }
-  .appointments {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    max-width: 280px;
-    overflow-x: auto;
-    padding-right: 0;
-    padding-bottom: 15px;
-  }
-  .resume {
-    width: 100%;
-    height: 30vh;
-  }
-  .stretch {
-    height: 58px;
-  }
-}
 .grid {
   margin-top: 30px;
   width: 100%;

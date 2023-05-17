@@ -1,0 +1,29 @@
+.aux{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    img{
+        width: 6vh;
+        height: 6vh;
+    }
+
+    a {
+        width: min-content;
+    }
+
+    span {
+        background-color: $secondary-color;
+        color: $tertiary-color;
+        border-radius: 40px;
+        border: 1px $secondary-color solid;
+        padding: 5px;
+        transition: .5s;
+    }
+
+    span:hover {
+        background-color: $tertiary-color;
+        color: $primary-color;
+    }
+}

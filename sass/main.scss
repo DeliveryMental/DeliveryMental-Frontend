@@ -7,6 +7,7 @@
 @import 'breakpoints/breakpoints';
 
 @import 'components/buttons';
+@import 'components/checkbox';
 @import 'components/inputs';
 @import 'components/selects';
 
@@ -15,9 +16,12 @@
 @import 'layout/forms';
 @import 'layout/nav';
 
-@import 'pages/index';
-@import 'pages/home';
-@import 'pages/profile';
 @import 'pages/appointments';
+@import 'pages/chat';
+@import 'pages/chats.scss';
+@import 'pages/config';
+@import 'pages/home';
+@import 'pages/index';
+@import 'pages/profile';
 @import 'pages/proList';
 @import 'pages/register';

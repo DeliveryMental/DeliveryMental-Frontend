@@ -110,17 +110,18 @@
         margin: 0;
     }
 
-    .align-top {
-        align-self: flex-start;
-        width: 50%;
-        height: 100%;
-    }
+}
 
-    .align-bottom {
-        align-self: flex-end;
-        width: 50%;
-        height: 100%;
-    }
+.align-top {
+    align-self: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+.align-bottom {
+    align-self: flex-end;
+    width: 50%;
+    height: 100%;
 }
 
 .footerInfo {
@@ -133,6 +134,10 @@
     border-radius: 10px;
     padding: 10px;
 
+}
+
+.indexHr {
+    display: none;
 }
 
 .imgFooter {
@@ -168,6 +173,10 @@
 
     .container {
         width: 100%;
+    }
+
+    .indexHr {
+        display: block;
     }
 }
 
