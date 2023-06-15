@@ -464,6 +464,10 @@ nav a {
   justify-content: center;
   padding: 10px;
 }
+.headingConfig hr {
+  width: 100%;
+  max-width: 600px;
+}
 
 .config {
   display: flex;
@@ -480,6 +484,7 @@ nav a {
   justify-content: space-between;
   padding: 15px;
   width: 100%;
+  max-width: 500px;
   background-color: #16A085;
   color: #2C3E50;
   border-radius: 15px;
@@ -745,11 +750,15 @@ nav a {
 }
 .mainHeader {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.mainHeader div {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
 }
 .mainHeader img {
   border-radius: 12px;
@@ -763,7 +772,13 @@ nav a {
   justify-content: center;
   border-radius: 9px;
 }
-.mainHeader h1, .mainHeader h2 {
+.mainHeader #log {
+  position: absolute;
+  right: 200px;
+  top: 10px;
+}
+.mainHeader h1,
+.mainHeader h2 {
   margin: 0;
 }
 
@@ -816,20 +831,21 @@ nav a {
   background-color: #16A085;
   color: #16A085;
 }
-#register div {
+#register .cad {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+#register .cad div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
   border-radius: 10px;
-  text-align: center;
   background-color: #2C3E50;
-}
-#register .container {
-  width: 30%;
-  background-color: inherit;
-  padding: 0;
 }
 #register h1 {
   background-color: #2C3E50;
@@ -1014,7 +1030,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10vh;
+  gap: 5vh;
 }
 
 .formWrapper {
